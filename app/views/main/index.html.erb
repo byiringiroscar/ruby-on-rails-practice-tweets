@@ -1,1 +1,6 @@
-<h1 class="d-flex justify-content-center align-items-center">Hello home</h1>
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <h1>Welcome to scheduled Tweets</h1>
+    <% if @user %>
+        Logged In as: <%= @user.email%>
+    <% end %>
+</div>
