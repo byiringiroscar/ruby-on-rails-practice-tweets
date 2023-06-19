@@ -2,5 +2,7 @@
     <h1>Welcome to scheduled Tweets</h1>
     <% if @user %>
         Logged In as: <%= @user.email%>
+
+        <%= button_to "Logout", logout_path, method: :delete %>
     <% end %>
 </div>
